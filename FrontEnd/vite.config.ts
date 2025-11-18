@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
+    base: Processor.env.VITE_BASE_PATH || "/ATS-Checker",
   },
 });
